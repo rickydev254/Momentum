@@ -71,7 +71,6 @@ Filter a Course
 http://localhost:8080/api/v1/course/search?name=software
 
 Sample Result
-
   {
     "content": [
         {
@@ -110,7 +109,6 @@ Sort By name in Ascending Order
   http://localhost:8080/api/v1/course/search?sortBy=name
   
   Sample Result
-  
   {
     "content": [
         {
