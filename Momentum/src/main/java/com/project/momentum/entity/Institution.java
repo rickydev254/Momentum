@@ -1,5 +1,6 @@
 package com.project.momentum.entity;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -11,7 +12,7 @@ import lombok.Setter;
 import lombok.ToString;
 
 @Entity
-@Table(name = "Institution")
+@Table(name = "Institution") //Creating table to store institution details
 @Getter
 @Setter
 @ToString
@@ -19,8 +20,11 @@ import lombok.ToString;
 public class Institution {
 	@Id @GeneratedValue
 	private int id;
+	@Column(unique = true) //Ensure every name is unique
 	private String name;
+	@Column
 	private String address;
+	@Column
 	private int population;
 	
 	public void setId(int id) {
