@@ -60,3 +60,47 @@ Testing the API using Postman
   Edit an Institution
     http://localhost:8080/api/v1/institution/{id}
         
+Course
+
+List All Courses
+
+http://localhost:8080/api/v1/course
+
+Filter a Course
+
+http://localhost:8080/api/v1/course/search?name=software
+
+Sample Result
+  {
+    "content": [
+        {
+            "id": 3,
+            "name": "Bachelor of Software Engineering"
+        }
+    ],
+    "pageable": {
+        "sort": {
+            "sorted": true,
+            "unsorted": false,
+            "empty": false
+        },
+        "pageNumber": 0,
+        "pageSize": 10,
+        "offset": 0,
+        "paged": true,
+        "unpaged": false
+    },
+    "totalPages": 1,
+    "totalElements": 1,
+    "last": true,
+    "sort": {
+        "sorted": true,
+        "unsorted": false,
+        "empty": false
+    },
+    "first": true,
+    "size": 10,
+    "number": 0,
+    "numberOfElements": 1,
+    "empty": false
+}
