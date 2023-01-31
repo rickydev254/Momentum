@@ -2,6 +2,7 @@ Testing the API using Postman
   Institution
   Add an Institution
     http://localhost:8080/api/v1/institution
+    
       sample Body
         {
             "name":"Nairobi University",
@@ -10,8 +11,10 @@ Testing the API using Postman
         }
   List All Institution
         http://localhost:8080/api/v1/institution
+        
   Search the List of Institution
         http://localhost:8080/api/v1/institution/search?name=Nairobi
+        
           Sample Result
             {
     "content": [
