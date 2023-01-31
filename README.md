@@ -70,8 +70,8 @@ Filter a Course
 
 http://localhost:8080/api/v1/course/search?name=software
 
-Sample Result
-  {
+  Sample Result
+    {
     "content": [
         {
             "id": 3,
